@@ -1,4 +1,4 @@
-package org.team15.gradation.domain.Posts;
+package org.team15.gradation.domain.Post;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Post {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

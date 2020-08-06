@@ -1,4 +1,4 @@
-package org.team15.gradation.domain.channels;
+package org.team15.gradation.domain.channel;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Channels {
+public class Channel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +25,7 @@ public class Channels {
     private String picture;
 
     @Builder
-    public Channels(String title, String category, String picture) {
+    public Channel(String title, String category, String picture) {
         this.title = title;
         this.category = category;
         this.picture = picture;
